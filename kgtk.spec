@@ -15,7 +15,6 @@ BuildRequires:  cmake
 BuildRequires:  gtk2-devel
 
 %description
-
 This is a quick-and-dirty LD_PRELOAD hack that allows *some* 
 Gtk applications to use KDE's file dialogs when run under KDE. 
 
