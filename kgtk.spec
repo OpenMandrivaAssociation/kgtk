@@ -42,7 +42,10 @@ rm -rf $RPM_BUILD_ROOT
 
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=%_prefix ..
+cmake .. -DCMAKE_INSTALL_PREFIX=%_prefix \
+%if "%_lib" != "lib"
+        -DLIB_SUFFIX=64
+%endif
 
 
 %make
