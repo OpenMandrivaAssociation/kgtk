@@ -9,7 +9,6 @@ Group:          Graphical desktop/KDE
 License:        GPL
 URL:            http://www.kde-apps.org/content/show.php/KGtk+%28Use+KDE+Dialogs+in+Gtk+Apps%29?content=36077
 Source:	        %{oname}-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  kdelibs-devel
 BuildRequires:  cmake
 BuildRequires:  gtk2-devel
