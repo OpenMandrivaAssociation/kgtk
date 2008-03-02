@@ -9,6 +9,7 @@ Group:          Graphical desktop/KDE
 License:        GPL
 URL:            http://www.kde-apps.org/content/show.php/KGtk+%28Use+KDE+Dialogs+in+Gtk+Apps%29?content=36077
 Source:	        %{oname}-%{version}.tar.bz2
+Patch0:         KGtk-0.9.4-fix-libdir.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  kdelibs-devel
 BuildRequires:  cmake
@@ -35,7 +36,7 @@ Gtk applications to use KDE's file dialogs when run under KDE.
 %prep 
 rm -rf $RPM_BUILD_ROOT
 %setup -q -n %oname-%version
-
+%patch0 -p1
 
 %build
 
