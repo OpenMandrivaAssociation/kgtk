@@ -3,7 +3,7 @@
 
 Name:           %name
 Version:        0.10.0
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        KGtk - Allow to use KDE's file dialogs when run under KDE for GTK apps
 Group:          Graphical desktop/KDE
 License:        GPL
