@@ -47,3 +47,43 @@ cd build
  
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+
+%changelog
+* Mon Dec 06 2010 Oden Eriksson <oeriksson@mandriva.com> 0.10.1-2mdv2011.0
++ Revision: 612599
+- the mass rebuild of 2010.1 packages
+
+* Sun Mar 07 2010 Sandro Cazzaniga <kharec@mandriva.org> 0.10.1-1mdv2010.1
++ Revision: 515352
+- update to 0.10.1
+- drop an old patch, applied upstream.
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Fri Mar 06 2009 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.10.0-1mdv2009.1
++ Revision: 349614
+- Fix build
+- New version
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sun Mar 02 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.9.4-2mdv2008.1
++ Revision: 177677
+- [BUGFIX] Fix preload error (Bug #37936)
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - kill extra spacing at top of description
+
+* Fri Dec 07 2007 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.9.4-1mdv2008.1
++ Revision: 116104
+- Fix install on x86_64
+- import kgtk
+
+
