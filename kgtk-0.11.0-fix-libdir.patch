@@ -1,0 +1,24 @@
+diff -urN KGtk-0.11.0/gtk2/kgtk2-wrapper.cmake KGtk-0.11.0-patched/gtk2/kgtk2-wrapper.cmake
+--- KGtk-0.11.0/gtk2/kgtk2-wrapper.cmake	2011-11-04 08:46:35.000000000 +1100
++++ KGtk-0.11.0-patched/gtk2/kgtk2-wrapper.cmake	2014-03-07 00:09:20.018110885 +1100
+@@ -18,7 +18,7 @@
+ app=`basename $0`
+ 
+ if [ "$app" = "kgtk2-wrapper" ] ; then
+-    LD_PRELOAD=@CMAKE_INSTALL_PREFIX@/lib/kgtk/libkgtk2.so:$LD_PRELOAD "$@"
++    LD_PRELOAD=@CMAKE_INSTALL_PREFIX@/lib@LIB_SUFFIX@/kgtk/libkgtk2.so:$LD_PRELOAD "$@"
+ else
+     dir=`dirname $0`
+     oldPath=$PATH
+diff -urN KGtk-0.11.0/gtk3/kgtk3-wrapper.cmake KGtk-0.11.0-patched/gtk3/kgtk3-wrapper.cmake
+--- KGtk-0.11.0/gtk3/kgtk3-wrapper.cmake	2011-11-04 08:46:35.000000000 +1100
++++ KGtk-0.11.0-patched/gtk3/kgtk3-wrapper.cmake	2014-03-07 00:10:18.051045355 +1100
+@@ -18,7 +18,7 @@
+ app=`basename $0`
+ 
+ if [ "$app" = "kgtk3-wrapper" ] ; then
+-    LD_PRELOAD=@CMAKE_INSTALL_PREFIX@/lib/kgtk/libkgtk3.so:$LD_PRELOAD "$@"
++    LD_PRELOAD=@CMAKE_INSTALL_PREFIX@/lib@LIB_SUFFIX@/kgtk/libkgtk3.so:$LD_PRELOAD "$@"
+ else
+     dir=`dirname $0`
+     oldPath=$PATH
