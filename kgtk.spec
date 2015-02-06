@@ -3,7 +3,7 @@
 Summary:	KGtk - Allow to use KDE's file dialogs when run under KDE for GTK apps
 Name:		kgtk
 Version:	0.11.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde-apps.org/content/show.php/KGtk+%28Use+KDE+Dialogs+in+Gtk+Apps%29?content=36077
