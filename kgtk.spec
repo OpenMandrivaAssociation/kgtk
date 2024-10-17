@@ -6,7 +6,7 @@ Version:	0.11.0
 Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://www.kde-apps.org/content/show.php/KGtk+%28Use+KDE+Dialogs+in+Gtk+Apps%29?content=36077
+Url:		https://www.kde-apps.org/content/show.php/KGtk+%28Use+KDE+Dialogs+in+Gtk+Apps%29?content=36077
 Source0:	%{oname}-%{version}.tar.bz2
 Source10:	%{name}.rpmlintrc
 Patch0:		kgtk-0.11.0-fix-libdir.patch
