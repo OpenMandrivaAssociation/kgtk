@@ -11,6 +11,7 @@ Source0:	%{oname}-%{version}.tar.bz2
 Source10:	%{name}.rpmlintrc
 Patch0:		kgtk-0.11.0-fix-libdir.patch
 Patch1:		kgtk-0.11.0-include.patch
+BuildRequires:	make
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
